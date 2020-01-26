@@ -1,0 +1,316 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+/*========================
+begin of the .main section 
+==========================*/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 550px;
+    background: url(../img/bg/first-bg.jpg) no-repeat ;
+    background-size: cover;
+}
+/*--------------
+begin of header 
+---------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 80%;
+}
+.menu {
+    width: 40%;
+} 
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.menu__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 300;
+}
+.menu__link:hover {
+    color: yellow;
+}
+.main__logo {
+    margin-left: 30px;
+}
+/*--------------
+end of header
+---------------*/
+.main__info {
+    margin-top: 100px;
+    margin-left: 350px;    
+}
+.main__text {
+    color: #ffffff;
+}
+.main__title {
+    margin-bottom: 13px;
+    font-size: 40px;
+    font-weight: 300;
+}
+.main__subtitle {
+    margin-bottom: 35px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.btn {
+    width: 150px;
+    height: 41px;
+    border: 2px solid #ffffff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: hotpink;
+}
+/*=====================
+end of the .main section
+=======================*/
+
+
+
+/*=====================
+begin of the descr. section 
+=======================*/
+.descr {
+    max-height: 450px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+.descr__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.descr__title {
+    margin-top: 86px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.descr__text {
+    margin: 0;
+    margin-bottom: 45px;
+    padding: 0.1px 0;
+    color: #404040;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24.72px;
+}
+.descr__img {
+    display: block;
+    margin-bottom: 100px;
+}
+/*=======================
+end of the descr. section
+=========================*/
+
+
+
+/*======================
+begin of the "advantages" section 
+========================*/
+.advantages {
+    min-height: 304px;
+    /* background: url(../img/bg/third-bg.png) no-repeat;
+    background-size: cover; */
+}
+.adv__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+/*--------------
+begin of the advantages-block + bgc  
+---------------*/
+
+.adv__block {
+    min-height: 304px;
+}
+
+.adv__block_seo {
+    width: 40%;
+    background-color: #404040;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.adv__block_responsive {
+    width: 20%;
+    background-color: #f74c55;
+}
+.adv__block_cloud {
+    width: 40%;
+    background-color: #2d5f3b;
+}
+
+/*--------------
+end of the advantages-block + bgc
+---------------*/
+
+
+/*--------------
+begin of the advantages-content 
+---------------*/
+.adv-content {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    max-width: 300px;      
+}
+.adv-content_seo {
+    margin-right: 30px;
+}
+.adv__block_responsive {
+    padding-left: 20px;
+}
+.adv__block_cloud {
+    padding-left: 20px;
+}
+.adv-content__title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    min-height: 36px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.adv-content__title-seo::before {
+    content: '';
+    background-image: url(../img/icons/statistic_up.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 28px;
+    height: 36px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.adv-content__title-responsive::before {
+    content: '';
+    background-image: url(../img/icons/iPad_potrait_&_landscape.png);
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.adv-content__title-cloud::before {
+    content: '';
+    background-image: url(../img/icons/upload.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 39px;
+    height: 36px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.adv-content__text {
+    margin-top: 16px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.72px;
+}
+.adv-content__item {
+    margin-top: 20px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 32px;
+    background: #000;
+    opacity: 0.4;
+}
+.adv-content__item::before {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 4px;
+    background-color: #fff;
+}
+.adv-content__item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 19px;
+    background-color: #fff;
+}
+/*=======================
+end of the "advantages" section 
+=========================*/
+
+
+
+/*======================
+begin of the "more" section 
+========================*/
+.more {
+    height: 600px;
+    background: url(../img/bg/four-bg.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.more__title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 53.72px;
+    text-align: center;
+}
+.more__title_bold {
+    font-weight: 700;    
+}
+.more__btn {
+    margin-top: 40px;
+    width: 190px;
+    height: 50px;
+    text-align: center;
+}
+.more__btn:hover {
+    opacity: 0.8;
+}
+
+/*=======================
+end of the "more" section 
+=========================*/
+
+
+footer {
+    min-height: 70px;
+    padding: 30px 0;
+}
+.footer__info {
+    margin: 0 auto;
+    width: 216px;
+    height: 17px;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 400;
+
+}
