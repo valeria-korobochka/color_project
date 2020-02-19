@@ -1,0 +1,26 @@
+@media (min-device-width:768px) and (max-device-width : 1024px) {
+    .main {
+        min-height: 450px;
+    }
+    .header {
+    
+    }
+    .menu {
+        width: 50%;
+    }
+    .menu ul {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .main__info {
+        margin-top: 90px;
+        margin-left: 300px;
+    }
+    .main__title {
+        margin-bottom: 13px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+ 
